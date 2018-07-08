@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D91A4C5520F23C8400429393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C5420F23C8400429393 /* AppDelegate.swift */; };
+		D91A4C5720F23C8400429393 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C5620F23C8400429393 /* ViewController.swift */; };
+		D91A4C5A20F23C8400429393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91A4C5820F23C8400429393 /* Main.storyboard */; };
+		D91A4C5D20F23C8400429393 /* Modamily.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C5B20F23C8400429393 /* Modamily.xcdatamodeld */; };
+		D91A4C5F20F23C8700429393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91A4C5E20F23C8700429393 /* Assets.xcassets */; };
+		D91A4C6220F23C8700429393 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91A4C6020F23C8700429393 /* LaunchScreen.storyboard */; };
+		D91A4C7420F24AA900429393 /* SanFranciscoDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D91A4C6B20F24AA700429393 /* SanFranciscoDisplay-Heavy.otf */; };
+		D91A4C7520F24AA900429393 /* SanFranciscoDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D91A4C6C20F24AA700429393 /* SanFranciscoDisplay-Black.otf */; };
+		D91A4C7620F24AA900429393 /* SanFranciscoDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D91A4C6D20F24AA700429393 /* SanFranciscoDisplay-Semibold.otf */; };
+		D91A4C7720F24AA900429393 /* SanFranciscoDisplay-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D91A4C6E20F24AA700429393 /* SanFranciscoDisplay-Thin.otf */; };
+		D91A4C7820F24AA900429393 /* SanFranciscoDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D91A4C6F20F24AA800429393 /* SanFranciscoDisplay-Bold.otf */; };
+		D91A4C7920F24AA900429393 /* SanFranciscoDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D91A4C7020F24AA800429393 /* SanFranciscoDisplay-Regular.otf */; };
+		D91A4C7A20F24AA900429393 /* SanFranciscoDisplay-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = D91A4C7120F24AA800429393 /* SanFranciscoDisplay-Ultralight.otf */; };
+		D91A4C7B20F24AA900429393 /* SanFranciscoDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D91A4C7220F24AA800429393 /* SanFranciscoDisplay-Light.otf */; };
+		D91A4C7C20F24AA900429393 /* SanFranciscoDisplay-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D91A4C7320F24AA800429393 /* SanFranciscoDisplay-Medium.otf */; };
+		D91A4C7E20F24AEE00429393 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C7D20F24AEE00429393 /* Constants.swift */; };
+		D91A4C8520F24BDA00429393 /* CustomBorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C8020F24BDA00429393 /* CustomBorderedView.swift */; };
+		D91A4C8620F24BDA00429393 /* LRoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C8120F24BDA00429393 /* LRoundedLabel.swift */; };
+		D91A4C8720F24BDA00429393 /* RoundedBorderUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C8220F24BDA00429393 /* RoundedBorderUIButton.swift */; };
+		D91A4C8820F24BDA00429393 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C8320F24BDA00429393 /* String+Extension.swift */; };
+		D91A4C8920F24BDA00429393 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C8420F24BDA00429393 /* UIColor+Extension.swift */; };
+		D91A4C8B20F27A4E00429393 /* GetStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C8A20F27A4E00429393 /* GetStartViewController.swift */; };
+		D91A4C8D20F27A5B00429393 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C8C20F27A5B00429393 /* LoginViewController.swift */; };
+		D91A4C8F20F27A6500429393 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C8E20F27A6500429393 /* SignupViewController.swift */; };
+		D91A4C9120F27A9A00429393 /* ImageSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C9020F27A9A00429393 /* ImageSignupViewController.swift */; };
+		D91A4C9320F27AB800429393 /* MoreSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C9220F27AB800429393 /* MoreSignupViewController.swift */; };
+		D91A4C9520F27AC200429393 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C9420F27AC200429393 /* CurrentLocationViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D91A4C5120F23C8400429393 /* Modamily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modamily.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D91A4C5420F23C8400429393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D91A4C5620F23C8400429393 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D91A4C5920F23C8400429393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D91A4C5C20F23C8400429393 /* Modamily.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Modamily.xcdatamodel; sourceTree = "<group>"; };
+		D91A4C5E20F23C8700429393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D91A4C6120F23C8700429393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D91A4C6320F23C8700429393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D91A4C6B20F24AA700429393 /* SanFranciscoDisplay-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Heavy.otf"; sourceTree = "<group>"; };
+		D91A4C6C20F24AA700429393 /* SanFranciscoDisplay-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Black.otf"; sourceTree = "<group>"; };
+		D91A4C6D20F24AA700429393 /* SanFranciscoDisplay-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Semibold.otf"; sourceTree = "<group>"; };
+		D91A4C6E20F24AA700429393 /* SanFranciscoDisplay-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Thin.otf"; sourceTree = "<group>"; };
+		D91A4C6F20F24AA800429393 /* SanFranciscoDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Bold.otf"; sourceTree = "<group>"; };
+		D91A4C7020F24AA800429393 /* SanFranciscoDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Regular.otf"; sourceTree = "<group>"; };
+		D91A4C7120F24AA800429393 /* SanFranciscoDisplay-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Ultralight.otf"; sourceTree = "<group>"; };
+		D91A4C7220F24AA800429393 /* SanFranciscoDisplay-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Light.otf"; sourceTree = "<group>"; };
+		D91A4C7320F24AA800429393 /* SanFranciscoDisplay-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Medium.otf"; sourceTree = "<group>"; };
+		D91A4C7D20F24AEE00429393 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D91A4C8020F24BDA00429393 /* CustomBorderedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBorderedView.swift; sourceTree = "<group>"; };
+		D91A4C8120F24BDA00429393 /* LRoundedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRoundedLabel.swift; sourceTree = "<group>"; };
+		D91A4C8220F24BDA00429393 /* RoundedBorderUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBorderUIButton.swift; sourceTree = "<group>"; };
+		D91A4C8320F24BDA00429393 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		D91A4C8420F24BDA00429393 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D91A4C8A20F27A4E00429393 /* GetStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartViewController.swift; sourceTree = "<group>"; };
+		D91A4C8C20F27A5B00429393 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D91A4C8E20F27A6500429393 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		D91A4C9020F27A9A00429393 /* ImageSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSignupViewController.swift; sourceTree = "<group>"; };
+		D91A4C9220F27AB800429393 /* MoreSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSignupViewController.swift; sourceTree = "<group>"; };
+		D91A4C9420F27AC200429393 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D91A4C4E20F23C8400429393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D91A4C4820F23C8400429393 = {
+			isa = PBXGroup;
+			children = (
+				D91A4C5320F23C8400429393 /* Modamily */,
+				D91A4C5220F23C8400429393 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D91A4C5220F23C8400429393 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D91A4C5120F23C8400429393 /* Modamily.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D91A4C5320F23C8400429393 /* Modamily */ = {
+			isa = PBXGroup;
+			children = (
+				D91A4C7D20F24AEE00429393 /* Constants.swift */,
+				D91A4C5420F23C8400429393 /* AppDelegate.swift */,
+				D91A4C5620F23C8400429393 /* ViewController.swift */,
+				D91A4C6920F2483900429393 /* ViewControllers */,
+				D91A4C7F20F24BDA00429393 /* Extensions */,
+				D91A4C6A20F2484200429393 /* Fonts */,
+				D91A4C5820F23C8400429393 /* Main.storyboard */,
+				D91A4C5E20F23C8700429393 /* Assets.xcassets */,
+				D91A4C6020F23C8700429393 /* LaunchScreen.storyboard */,
+				D91A4C6320F23C8700429393 /* Info.plist */,
+				D91A4C5B20F23C8400429393 /* Modamily.xcdatamodeld */,
+			);
+			path = Modamily;
+			sourceTree = "<group>";
+		};
+		D91A4C6920F2483900429393 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D91A4C8A20F27A4E00429393 /* GetStartViewController.swift */,
+				D91A4C8C20F27A5B00429393 /* LoginViewController.swift */,
+				D91A4C8E20F27A6500429393 /* SignupViewController.swift */,
+				D91A4C9020F27A9A00429393 /* ImageSignupViewController.swift */,
+				D91A4C9220F27AB800429393 /* MoreSignupViewController.swift */,
+				D91A4C9420F27AC200429393 /* CurrentLocationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D91A4C6A20F2484200429393 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D91A4C6C20F24AA700429393 /* SanFranciscoDisplay-Black.otf */,
+				D91A4C6F20F24AA800429393 /* SanFranciscoDisplay-Bold.otf */,
+				D91A4C6B20F24AA700429393 /* SanFranciscoDisplay-Heavy.otf */,
+				D91A4C7220F24AA800429393 /* SanFranciscoDisplay-Light.otf */,
+				D91A4C7320F24AA800429393 /* SanFranciscoDisplay-Medium.otf */,
+				D91A4C7020F24AA800429393 /* SanFranciscoDisplay-Regular.otf */,
+				D91A4C6D20F24AA700429393 /* SanFranciscoDisplay-Semibold.otf */,
+				D91A4C6E20F24AA700429393 /* SanFranciscoDisplay-Thin.otf */,
+				D91A4C7120F24AA800429393 /* SanFranciscoDisplay-Ultralight.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D91A4C7F20F24BDA00429393 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D91A4C8020F24BDA00429393 /* CustomBorderedView.swift */,
+				D91A4C8120F24BDA00429393 /* LRoundedLabel.swift */,
+				D91A4C8220F24BDA00429393 /* RoundedBorderUIButton.swift */,
+				D91A4C8320F24BDA00429393 /* String+Extension.swift */,
+				D91A4C8420F24BDA00429393 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D91A4C5020F23C8400429393 /* Modamily */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D91A4C6620F23C8700429393 /* Build configuration list for PBXNativeTarget "Modamily" */;
+			buildPhases = (
+				D91A4C4D20F23C8400429393 /* Sources */,
+				D91A4C4E20F23C8400429393 /* Frameworks */,
+				D91A4C4F20F23C8400429393 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Modamily;
+			productName = Modamily;
+			productReference = D91A4C5120F23C8400429393 /* Modamily.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D91A4C4920F23C8400429393 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "iMac Pro";
+				TargetAttributes = {
+					D91A4C5020F23C8400429393 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = D91A4C4C20F23C8400429393 /* Build configuration list for PBXProject "Modamily" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D91A4C4820F23C8400429393;
+			productRefGroup = D91A4C5220F23C8400429393 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D91A4C5020F23C8400429393 /* Modamily */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D91A4C4F20F23C8400429393 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D91A4C7A20F24AA900429393 /* SanFranciscoDisplay-Ultralight.otf in Resources */,
+				D91A4C7620F24AA900429393 /* SanFranciscoDisplay-Semibold.otf in Resources */,
+				D91A4C7820F24AA900429393 /* SanFranciscoDisplay-Bold.otf in Resources */,
+				D91A4C7720F24AA900429393 /* SanFranciscoDisplay-Thin.otf in Resources */,
+				D91A4C7520F24AA900429393 /* SanFranciscoDisplay-Black.otf in Resources */,
+				D91A4C6220F23C8700429393 /* LaunchScreen.storyboard in Resources */,
+				D91A4C5F20F23C8700429393 /* Assets.xcassets in Resources */,
+				D91A4C7C20F24AA900429393 /* SanFranciscoDisplay-Medium.otf in Resources */,
+				D91A4C7920F24AA900429393 /* SanFranciscoDisplay-Regular.otf in Resources */,
+				D91A4C7420F24AA900429393 /* SanFranciscoDisplay-Heavy.otf in Resources */,
+				D91A4C7B20F24AA900429393 /* SanFranciscoDisplay-Light.otf in Resources */,
+				D91A4C5A20F23C8400429393 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D91A4C4D20F23C8400429393 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D91A4C8820F24BDA00429393 /* String+Extension.swift in Sources */,
+				D91A4C9520F27AC200429393 /* CurrentLocationViewController.swift in Sources */,
+				D91A4C8720F24BDA00429393 /* RoundedBorderUIButton.swift in Sources */,
+				D91A4C8520F24BDA00429393 /* CustomBorderedView.swift in Sources */,
+				D91A4C8920F24BDA00429393 /* UIColor+Extension.swift in Sources */,
+				D91A4C8620F24BDA00429393 /* LRoundedLabel.swift in Sources */,
+				D91A4C5720F23C8400429393 /* ViewController.swift in Sources */,
+				D91A4C8F20F27A6500429393 /* SignupViewController.swift in Sources */,
+				D91A4C5520F23C8400429393 /* AppDelegate.swift in Sources */,
+				D91A4C5D20F23C8400429393 /* Modamily.xcdatamodeld in Sources */,
+				D91A4C8B20F27A4E00429393 /* GetStartViewController.swift in Sources */,
+				D91A4C7E20F24AEE00429393 /* Constants.swift in Sources */,
+				D91A4C9320F27AB800429393 /* MoreSignupViewController.swift in Sources */,
+				D91A4C9120F27A9A00429393 /* ImageSignupViewController.swift in Sources */,
+				D91A4C8D20F27A5B00429393 /* LoginViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D91A4C5820F23C8400429393 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D91A4C5920F23C8400429393 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D91A4C6020F23C8700429393 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D91A4C6120F23C8700429393 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D91A4C6420F23C8700429393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D91A4C6520F23C8700429393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D91A4C6720F23C8700429393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BZ54827F5;
+				INFOPLIST_FILE = Modamily/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.modamily.Modamily;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D91A4C6820F23C8700429393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BZ54827F5;
+				INFOPLIST_FILE = Modamily/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.modamily.Modamily;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D91A4C4C20F23C8400429393 /* Build configuration list for PBXProject "Modamily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D91A4C6420F23C8700429393 /* Debug */,
+				D91A4C6520F23C8700429393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D91A4C6620F23C8700429393 /* Build configuration list for PBXNativeTarget "Modamily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D91A4C6720F23C8700429393 /* Debug */,
+				D91A4C6820F23C8700429393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D91A4C5B20F23C8400429393 /* Modamily.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D91A4C5C20F23C8400429393 /* Modamily.xcdatamodel */,
+			);
+			currentVersion = D91A4C5C20F23C8400429393 /* Modamily.xcdatamodel */;
+			path = Modamily.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D91A4C4920F23C8400429393 /* Project object */;
+}
