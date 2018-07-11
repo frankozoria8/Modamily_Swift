@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		821A1CBFA34F32099DB8FCCA /* Pods_Modamily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECAEBA26D4DD3EBCC032368 /* Pods_Modamily.framework */; };
 		D91A4C5520F23C8400429393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C5420F23C8400429393 /* AppDelegate.swift */; };
 		D91A4C5720F23C8400429393 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C5620F23C8400429393 /* ViewController.swift */; };
 		D91A4C5A20F23C8400429393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91A4C5820F23C8400429393 /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D18EDD9CE2A024D3CD0D74A /* Pods-Modamily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modamily.release.xcconfig"; path = "Pods/Target Support Files/Pods-Modamily/Pods-Modamily.release.xcconfig"; sourceTree = "<group>"; };
+		3ECAEBA26D4DD3EBCC032368 /* Pods_Modamily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modamily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91A4C5120F23C8400429393 /* Modamily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modamily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91A4C5420F23C8400429393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D91A4C5620F23C8400429393 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 		D91A4C9020F27A9A00429393 /* ImageSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSignupViewController.swift; sourceTree = "<group>"; };
 		D91A4C9220F27AB800429393 /* MoreSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSignupViewController.swift; sourceTree = "<group>"; };
 		D91A4C9420F27AC200429393 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
+		DD3FFAE4A0858E9ABAA4C6FD /* Pods-Modamily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modamily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Modamily/Pods-Modamily.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,17 +77,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				821A1CBFA34F32099DB8FCCA /* Pods_Modamily.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A634E743F023473CAEE77387 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD3FFAE4A0858E9ABAA4C6FD /* Pods-Modamily.debug.xcconfig */,
+				3D18EDD9CE2A024D3CD0D74A /* Pods-Modamily.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC695AD7298FF4714A9B710F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3ECAEBA26D4DD3EBCC032368 /* Pods_Modamily.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D91A4C4820F23C8400429393 = {
 			isa = PBXGroup;
 			children = (
 				D91A4C5320F23C8400429393 /* Modamily */,
 				D91A4C5220F23C8400429393 /* Products */,
+				A634E743F023473CAEE77387 /* Pods */,
+				BC695AD7298FF4714A9B710F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D91A4C6620F23C8700429393 /* Build configuration list for PBXNativeTarget "Modamily" */;
 			buildPhases = (
+				9DC3A2A72E74BA9224AA7C6D /* [CP] Check Pods Manifest.lock */,
 				D91A4C4D20F23C8400429393 /* Sources */,
 				D91A4C4E20F23C8400429393 /* Frameworks */,
 				D91A4C4F20F23C8400429393 /* Resources */,
+				9226D7A00F5A0FFCAF5564DD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +254,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9226D7A00F5A0FFCAF5564DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Modamily/Pods-Modamily-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SCPageControl/SCPageControl.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftValidator/SwiftValidator.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCPageControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftValidator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Modamily/Pods-Modamily-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DC3A2A72E74BA9224AA7C6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Modamily-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D91A4C4D20F23C8400429393 /* Sources */ = {
@@ -390,6 +465,7 @@
 		};
 		D91A4C6720F23C8700429393 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD3FFAE4A0858E9ABAA4C6FD /* Pods-Modamily.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -408,6 +484,7 @@
 		};
 		D91A4C6820F23C8700429393 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D18EDD9CE2A024D3CD0D74A /* Pods-Modamily.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

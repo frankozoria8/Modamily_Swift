@@ -1,0 +1,17 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Modamily' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Modamily
+	
+	pod 'Alamofire', '~> 4.7'
+	pod 'SwiftyJSON'
+	pod "SCPageControl"
+	pod 'SwiftValidator'
+	pod 'SDWebImage'
+	pod 'SkyFloatingLabelTextField'
+	inhibit_all_warnings!
+end

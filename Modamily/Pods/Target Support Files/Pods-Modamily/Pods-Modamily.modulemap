@@ -1,0 +1,6 @@
+framework module Pods_Modamily {
+  umbrella header "Pods-Modamily-umbrella.h"
+
+  export *
+  module * { export * }
+}
