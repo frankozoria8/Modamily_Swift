@@ -8,28 +8,41 @@
 
 import UIKit
 
-class ImageSignupViewController: UIViewController {
+class ImageSignupViewController: BaseViewController {
 
+    @IBOutlet weak var profileImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.addLeftItemImage()
+
     }
 
+    override func viewDidLayoutSubviews() {
+        
+        profileImageView.layer.cornerRadius = profileImageView.frame.size.width/2
+        profileImageView.clipsToBounds = true
+        
+    }
+    
+    @IBAction func addImageAction(_ sender: Any) {
+        
+        let imagePickerVC = self.storyboard?.instantiateViewController(withIdentifier: "ImagePickerViewController") as! ImagePickerViewController
+        imagePickerVC.delegate = self
+        self.present(imagePickerVC, animated: true, completion: nil)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+}
+extension ImageSignupViewController: ImagePickerViewControllerDelegate {
+    func didSelectProfileImage(_ image: UIImage) {
+        self.profileImageView.image = image
     }
-    */
-
 }

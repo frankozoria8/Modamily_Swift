@@ -35,6 +35,9 @@
 		D91A4C9120F27A9A00429393 /* ImageSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C9020F27A9A00429393 /* ImageSignupViewController.swift */; };
 		D91A4C9320F27AB800429393 /* MoreSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C9220F27AB800429393 /* MoreSignupViewController.swift */; };
 		D91A4C9520F27AC200429393 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4C9420F27AC200429393 /* CurrentLocationViewController.swift */; };
+		D92BA14820F6B79800B645E4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BA14720F6B79800B645E4 /* BaseViewController.swift */; };
+		D92BA14A20F6CE4900B645E4 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BA14920F6CE4900B645E4 /* ImagePickerViewController.swift */; };
+		D92BA14C20F6D69500B645E4 /* PhotoGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BA14B20F6D69500B645E4 /* PhotoGalleryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +72,9 @@
 		D91A4C9020F27A9A00429393 /* ImageSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSignupViewController.swift; sourceTree = "<group>"; };
 		D91A4C9220F27AB800429393 /* MoreSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSignupViewController.swift; sourceTree = "<group>"; };
 		D91A4C9420F27AC200429393 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
+		D92BA14720F6B79800B645E4 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D92BA14920F6CE4900B645E4 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		D92BA14B20F6D69500B645E4 /* PhotoGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		DD3FFAE4A0858E9ABAA4C6FD /* Pods-Modamily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modamily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Modamily/Pods-Modamily.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,12 +146,15 @@
 		D91A4C6920F2483900429393 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D92BA14620F6B79800B645E4 /* Base */,
 				D91A4C8A20F27A4E00429393 /* GetStartViewController.swift */,
 				D91A4C8C20F27A5B00429393 /* LoginViewController.swift */,
 				D91A4C8E20F27A6500429393 /* SignupViewController.swift */,
 				D91A4C9020F27A9A00429393 /* ImageSignupViewController.swift */,
 				D91A4C9220F27AB800429393 /* MoreSignupViewController.swift */,
 				D91A4C9420F27AC200429393 /* CurrentLocationViewController.swift */,
+				D92BA14920F6CE4900B645E4 /* ImagePickerViewController.swift */,
+				D92BA14B20F6D69500B645E4 /* PhotoGalleryCollectionViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -178,6 +187,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		D92BA14620F6B79800B645E4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D92BA14720F6B79800B645E4 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,6 +207,7 @@
 				D91A4C4E20F23C8400429393 /* Frameworks */,
 				D91A4C4F20F23C8400429393 /* Resources */,
 				9226D7A00F5A0FFCAF5564DD /* [CP] Embed Pods Frameworks */,
+				430928A6EB8117E3687E6F27 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +274,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		430928A6EB8117E3687E6F27 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Modamily/Pods-Modamily-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9226D7A00F5A0FFCAF5564DD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,20 +297,24 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Modamily/Pods-Modamily-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SCPageControl/SCPageControl.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftValidator/SwiftValidator.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCPageControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftValidator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -312,6 +349,7 @@
 				D91A4C8820F24BDA00429393 /* String+Extension.swift in Sources */,
 				D91A4C9520F27AC200429393 /* CurrentLocationViewController.swift in Sources */,
 				D91A4C8720F24BDA00429393 /* RoundedBorderUIButton.swift in Sources */,
+				D92BA14A20F6CE4900B645E4 /* ImagePickerViewController.swift in Sources */,
 				D91A4C8520F24BDA00429393 /* CustomBorderedView.swift in Sources */,
 				D91A4C8920F24BDA00429393 /* UIColor+Extension.swift in Sources */,
 				D91A4C8620F24BDA00429393 /* LRoundedLabel.swift in Sources */,
@@ -322,7 +360,9 @@
 				D91A4C8B20F27A4E00429393 /* GetStartViewController.swift in Sources */,
 				D91A4C7E20F24AEE00429393 /* Constants.swift in Sources */,
 				D91A4C9320F27AB800429393 /* MoreSignupViewController.swift in Sources */,
+				D92BA14820F6B79800B645E4 /* BaseViewController.swift in Sources */,
 				D91A4C9120F27A9A00429393 /* ImageSignupViewController.swift in Sources */,
+				D92BA14C20F6D69500B645E4 /* PhotoGalleryCollectionViewCell.swift in Sources */,
 				D91A4C8D20F27A5B00429393 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,7 +515,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.modamily.Modamily;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Modamily.Modamily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -494,7 +534,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.modamily.Modamily;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Modamily.Modamily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

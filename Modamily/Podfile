@@ -9,9 +9,12 @@ target 'Modamily' do
 	
 	pod 'Alamofire', '~> 4.7'
 	pod 'SwiftyJSON'
-	pod "SCPageControl"
+	pod 'SCPageControl'
 	pod 'SwiftValidator'
 	pod 'SDWebImage'
 	pod 'SkyFloatingLabelTextField'
+    pod 'NVActivityIndicatorView'
+    pod 'TPKeyboardAvoiding'
+    
 	inhibit_all_warnings!
 end
