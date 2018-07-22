@@ -7,7 +7,11 @@
 //
 
 import UIKit
+
 import CoreData
+import FBSDKCoreKit
+
+import EggRating
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,9 +21,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        EggRating.itunesId = AppInfo.AppStoreID
+        EggRating.minRatingToAppStore = 3.5
+        
+        EggRating.debugMode = true
+        EggRating.minuteUntilPrompt = 10
+        EggRating.minuteRemindPeriod = 1
+        
+//        for family in UIFont.familyNames {
+//
+//            let sName: String = family as String
+//            print("family: \(sName)")
+//
+//            for name in UIFont.fontNames(forFamilyName: sName) {
+//                print("name: \(name as String)")
+//            }
+//        }
         return true
     }
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        let fbHandled = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+        
+        return fbHandled
+        
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -44,6 +75,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.saveContext()
     }
 
+    func showingAlertView(title: String, message: String){
+        let alert = UIAlertController(title: title, message: message  , preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.window?.rootViewController?.present(alert, animated: true, completion: nil)
+    }
+    
+    func appVersion() -> String {
+        let dictionary = Bundle.main.infoDictionary!
+        let version = dictionary["CFBundleShortVersionString"] as! String
+        let build = dictionary["CFBundleVersion"] as! String
+        return "\(version).\(build)"
+    }
+    
+    
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {
@@ -89,5 +134,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+    class func AppDelegate() -> AppDelegate
+    {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    
 }
 

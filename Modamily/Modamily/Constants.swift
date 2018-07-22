@@ -8,6 +8,9 @@
 
 import UIKit
 
+struct AppInfo {
+    static let AppStoreID                       = "902242970"
+}
 struct Constants {
     
     struct Keys {
@@ -23,90 +26,39 @@ struct Constants {
         static let kUserWorkEmail               = "KEY_USER_Work_Email"
         static let kUserPhonenumber             = "KEY_USER_Phonenumber"
         static let kUserAreaCode                = "KEY_USER_AreaCode"
-        static let kUserEnablePoints            = "KEY_USER_EnablePoints"
         static let kUserConnectedValue          = "KEY_USER_ConnectedValue"
         static let kUserBirthday                = "KEY_USER_Birthday"
         static let kUserPassword                = "KEY_USER_Password"
         static let kUserProfileImage            = "KEY_USER_ProfileImage"
-        static let kUserSTINGCode               = "KEY_USER_STINGCode"
         static let kUserBio                     = "KEY_USER_Bio"
-        static let kUserInterests               = "KEY_USER_Interests"
-        static let kUserWork                    = "KEY_USER_Work"
-        static let kUserEducation               = "KEY_USER_Education"
-        static let kUserSocialLinks             = "KEY_USER_SocialLinks"
         
+        static let kUserPremium                 = "KEY_USER_ISPremium"
     }
     
 }
-
-// MARK: - Constant String of Alert or Label
-struct RateConstant {
-    static let timeInterval = 60 * 60
+struct PLACEHOLDER {
+    static let WhoIam             = "I'm a single attractive professional living in NYC who's ready to have a child. Looking for someone from"
+    static let WhatIamLook        = "Looking for someone to share and define a modern family with. I have been thinking about having a child"
 }
-struct Messages {
-    struct Logo {
-        static let msgFirstStep                 = "Your First Step Toward Social Pollination."
-        static let msgWelcomeBack               = "Welcome Back"
-    }
+struct FilterData {
     
-    struct SignUp {
-        static let introOne                     = "One account is all you need to keep up with friends and establish new connections instantly."
-        static let introSecond                  = "Add unique connections to your HIVE to keep up with them in real-time."
-        static let introThree                   = "Notifications will keep you in the loop with your network"
-        static let tellYourself                 = "Tell us about yourself"
-        static let verifyYourself               = "Verify Your Identity"
-        static let identityMessage              = "Provide one or both"
-        
-        static let profileImage                 = "Profile Image"
-        static let profileIdentity              = "Profile Identity"
-        static let gatheringProfile             = "Gathering Your \nProfile Information"
-        static let creatingConnectID            = "Creating your very \nown Connect iD"
-        static let establishingCard             = "Establishing your \nSocial Card"
-        static let requireComplete              = "%@ required to complete registration"
-        static let increasetFirst               = "%@ to increase Profile Visibility by 4%@"
-        static let increasetSeconde             = "%@ to increase Profile Visibility by 18%@"
-        static let noLimit                      = "There are no limits to the number of STINGS"
-    }
-    struct LogIn {
-        static let firstLoginWelcome       = "Welcome back"
-        static let SuccessEmailSent        = "Success, we sent you an email"
-        static let SuccessPhoneSent        = "Success, check your mobile device"
-        static let EmailNotRegistered      = ""
-        static let PhoneNotRegistered      = "Phonenumber Not Regitered. Please Try Again"
-    }
-    struct Share {
-        static let Welcome                 = "Welcome, %@"
-        static let LetsStart               = "Let's get started."
-        static let Look                    = "Look,"
-        static let FindPerson              = " you have one new person in your Hive!"
-        static let TryScrolling            = "Try Scrolling"
-        static let TryScrollingAgain       = "Try Scrolling"
-        static let AllinOne                = "All in One"
-        static let AllinOneDetail          = "All your accounts in one place.\nConsider it a shortcut to your social."
-        static let WhatIsHive              = "What's a Hive?"
-        static let WhatHiveDetail          = "The Hive is your real-time ticker to content. Including your closest connections, favorite brands, admired figures and anyone else you might let your parents meet."
-        static let NaviagetHub             = "My Navigation Hub"
-        static let NaviagetHubDetail       = "We wanted to give you access the most \nimportant features in one place."
-        
-    }
-    struct LinkedAccount {
-        static let SuccessLogin        = "Successfully logged in! 👍"
-        static let FailedLogin         = "Failed of %@ Login! 👎"
-        static let SuccessUploading    = "Successfully uploaded username! 👍"
-        static let FailedUploading     = "Failed uploading username! 👎"
-    }
-    struct PopTip{
-        static let linkAccount             = "Tap a hexagon to link that account"
-        static let stingitForward          = "Invite 2 friends you would like to stay connected with"
-        static let chatlistTitle           = "Beak the ice or simply stay in-touch"
-        static let notificationTitle       = "Stay in the loop with your network"
-        static let pageControlPop          = "Swipe left, swipe right"
-    }
+    static let ANY_OF_THE_ABOVE = "Any of the above"
+    
+    static let DETAILARRAY = [["Gender","Location", "Who are looking"], ["Sexual orientation", "Race", "Ethnicity", "Zodiac Sign", "Religion", "Education", "Age", "Height", "Income", "Contact Options", "Relationship status", "Photos", "Last online", "Body type", "Diet", "Drink", "Drugs", "Smoke", "Fertilization method", "Blood type", "Hair color", "Eye color", "Health screen test", "Language", "Travel distance"]]
+    
+    static let KEY_Array = [["gender", "country", "looking_for"], ["orientation", "race", "ethnicity", "sign", "religion", "education", "age", "height", "income", "contact_options", "relationship", "have_photo", "lastlogin", "body_type", "diet", "drinks", "drugs", "smoke", "fertilization", "blood_type", "hair", "eye_color", "health_screening_test", "speaks", "travel_distance"]]
+    
+    static let LookingForArray = ["for a co-parent", "for a known donor", "for a romantic relationship", "to be a known donor", "for a surrogate", ANY_OF_THE_ABOVE]
+    
+    static let TotalArray = [[["Male", "Female", ANY_OF_THE_ABOVE], "", ["Co-parent", "Looking for a known donor", "Open to a romantic relationship", "Looking to be a known donor", "Surrogate", ANY_OF_THE_ABOVE]], [["Straight", "Gay", "Bi-sexual", "Trans", ANY_OF_THE_ABOVE], ["Asian", "Black", "White", "Hispanic/latin", "Native american", "Indian", "Latino", "Native tribes", "Middle east", "Mixed", "Other", "Undeclared", ANY_OF_THE_ABOVE], ["African", "American Indian", "Brazilian", "Caribbean", "Chinese", "Czech", "Danish", "Dutch", "English", "Filipino", "French", "German", "Greek", "Hungarian", "Indian", "Irish", "Italian", "Japanese", "Jewish", "Korean", "Lebanese", "Mexiacn", "Norvegian", "Pacific Islander", "Polish", "Portuguese", "Russian", "Scotish", "Slavic", "Slovakian", "Spanish", "Swedish", "Thai", "Welsh", ANY_OF_THE_ABOVE], ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces", ANY_OF_THE_ABOVE], ["Atheist", "Agnosticism", "Christianity", "Catholicism", "Judaism", "Islam", "Buddism", "Hinduism", "Orthodox Christian", "Other", ANY_OF_THE_ABOVE], ["High school", "2 year college", "4 year university", "Masters", "Law school", "Medical phd", "School of life", ANY_OF_THE_ABOVE], ["20", "30", "40", "50"], ["5'0 (152 cm)", "5'1 (154 cm)", "5'2 (157 cm)", "5'3 (160 cm)", "5'4 (162 cm)", "5'5 (165 cm)", "5'6 (167 cm)", "5'7 (170 cm)", "5'8 (172 cm)", "5'9 (175 cm)", "5'10 (177 cm)", "5'11 (180 cm)", "6'0 (182 cm)", "6'1 (185 cm)", "6'2 (187 cm)", "6'3 (190 cm)", "6'4 (193 cm)", "6'5 (195 cm)", "6'6 (198 cm)", "6'7 (200 cm)", "6'8 (203 cm)", "6'9 (205 cm)", "6'10 (208 cm)", "6'11 (210 cm)", "7'0 (213 cm)", ANY_OF_THE_ABOVE], "INCOME SLIDER", ["Depends on the person", "Co-parent", "Limited contact", "Contact after 18", "No Contact", ANY_OF_THE_ABOVE], ["Single", "In a relationship", ANY_OF_THE_ABOVE], ["Not important", "Must have a photo", ANY_OF_THE_ABOVE], ["Online now", "In the last day", "In the last week", "In the last month", "In the last year", ANY_OF_THE_ABOVE], ["Thin", "Athletic", "Average", "Curvy", "Overweight", "Rather not say", ANY_OF_THE_ABOVE], ["Anything goes", "Healthy", "Vegetarian", "Vegan", "Kosher", "Only eat to survive", "Other", ANY_OF_THE_ABOVE], ["Very often", "Socially", "Rarely", "Not at all", ANY_OF_THE_ABOVE], ["Often", "Sometimes", "Never", ANY_OF_THE_ABOVE], ["Yes", "No", "Occasionally", ANY_OF_THE_ABOVE], ["Ivf", "Home insemination", "Artificial insemination", "Natural insemination", "Cryobank", "Depends on the person", ANY_OF_THE_ABOVE], ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-", "Unknown", ANY_OF_THE_ABOVE], ["Auburn", "Brown", "Black", "Blonde", "Dark brown", "Dirty blonde", "Light brown", "Red", "Strawberry blonde", "Orange", "Gray ", "Other", ANY_OF_THE_ABOVE], ["Black", "Blue", "Brown", "Green", "Hazel", ANY_OF_THE_ABOVE], ["Yes", "No", "Undecided", ANY_OF_THE_ABOVE], ["English", "Afrikaans", "Albanian", "Arabic", "Bulgarian", "Cantonese", "Catalan", "Croatian", "Czech", "Danish", "Dutch", "Estonian", "Farsi", "Finnish", "French", "German", "Greek", "Hebrew", "Hindi", "Hungarian", "Icelandic", "Indonesian", "Irish", "Italian", "Japanese", "Korean", "Latin", "Latvian", "Lithuanian", "Malay", "Mandarin", "Norwegian", "Other", "Persian", "Polish", "Portuguese", "Romanian", "Russian", "Serbian", "Slovak", "Slovenian", "Spanish", "Swedish", "Tagalong", "Thai", "Turkish", "Ukrainian", "Urdu", "Vietnamese", "Yiddis", ANY_OF_THE_ABOVE], ["Depends on the person", "Up to 10 miles", "Up to 50 miles", "Up to 100 miles", "Over 100 miles", ANY_OF_THE_ABOVE]]]
+    
+    static let CountryCodesArray = ["US", "CA", "AF", "AL", "DZ", "AS", "AD", "AO", "AI", "AQ", "AG", "AR", "AM", "AW", "AU", "AT", "AZ", "BS", "BH", "BD", "BB", "BY", "BE", "BZ", "BJ", "BM", "BT", "BO", "BA", "BW", "BV", "BR", "IO", "BN", "BG", "BF", "BI", "KH", "CM", "CV", "KY", "CF", "TD", "CL", "CN", "CX", "CC", "CO", "KM", "CG", "CK", "CR", "CI", "HR", "CU", "CY", "CZ", "CS", "DK", "DJ", "DM", "DO", "TP", "EC", "EG", "SV", "GQ", "ER", "EE", "ET", "FK", "FO", "FJ", "FI", "FR", "FX", "GF", "PF", "TF", "GA", "GM", "GE", "DE", "GH", "GI", "GR", "GL", "GD", "GP", "GU", "GT", "GN", "GW", "GY", "HT", "HM", "HN", "HK", "HU", "IS", "IN", "ID", "IR", "IQ", "IE", "IL", "IT", "JM", "JP", "JO", "KZ", "KE", "KI", "KP", "KR", "KW", "KG", "LA", "LV", "LB", "LS", "LR", "LY", "LI", "LT", "LU", "MO", "MK", "MG", "MW", "MY", "MV", "ML", "MT", "MH", "MQ", "MR", "MU", "YT", "MX", "FM", "MD", "MC", "MN", "MS", "MA", "MZ", "MM", "NA", "NR", "NP", "NL", "AN", "NT", "NC", "NZ", "NI", "NE", "NG", "NU", "NF", "MP", "NO", "OM", "PK", "PW", "PA", "PG", "PY", "PE", "PH", "PN", "PL", "PT", "PR", "QA", "RE", "RO", "RU", "RW", "GS", "KN", "LC", "VC", "WS", "SM", "ST", "SA", "SN", "YU", "SC", "SL", "SG", "SK", "SI", "Sb", "SO", "ZA", "ES", "LK", "SH", "PM", "SD", "SR", "SJ", "SZ", "SE", "CH", "SY", "TW", "TJ", "TZ", "TH", "TG", "TK", "TO", "TT", "TN", "TR", "TM", "TC", "TV", "UG", "UA", "AE", "GB", "UY", "UM", "SU", "UZ", "VU", "VA", "VE", "VN", "VG", "VI", "WF", "EH", "YE", "YU", "ZR", "ZM", "ZW"]
+    static let SortedCountryArray = ["United States", "Canada", "Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra", "Angola", "Anguilla", "Antarctica", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Bouvet Island", "Brazil", "British Indian Ocean Territory", "Brunei Darussalam", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Cape Verde", "Cayman Islands", "Central African Republic", "Chad", "Chile", "China", "Christmas Island", "Cocos (Keeling) Islands", "Colombia", "Comoros", "Congo", "Cook Islands", "Costa Rica", "Cote D'Ivoire (Ivory Coast)", "Croatia (Hrvatska)", "Cuba", "Cyprus", "Czech Republic", "Czechoslovakia (former)", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Falkland Islands (Malvinas)", "Faroe Islands", "Fiji", "Finland", "France", "France, Metropolitan", "French Guiana", "French Polynesia", "French Southern Territories", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Gibraltar", "Greece", "Greenland", "Grenada", "Guadeloupe", "Guam", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Heard and McDonald Islands", "Honduras", "Hong Kong", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea (North)", "Korea (South)", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macau", "Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Martinique", "Mauritania", "Mauritius", "Mayotte", "Mexico", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montserrat", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "Netherlands Antilles", "Neutral Zone", "New Caledonia", "New Zealand (Aotearoa)", "Nicaragua", "Niger", "Nigeria", "Niue", "Norfolk Island", "Northern Mariana Islands", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Pitcairn", "Poland", "Portugal", "Puerto Rico", "Qatar", "Reunion", "Romania", "Russian Federation", "Rwanda", "S. Georgia and S. Sandwich Isls.", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovak Republic", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "Spain", "Sri Lanka", "St. Helena", "St. Pierre and Miquelon", "Sudan", "Suriname", "Svalbard and Jan Mayen Islands", "Swaziland", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tokelau", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Turks and Caicos Islands", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "Uruguay", "US Minor Outlying Islands", "USSR (former)", "Uzbekistan", "Vanuatu", "Vatican City State (Holy See)", "Venezuela", "Viet Nam", "Virgin Islands (British)", "Virgin Islands (U.S.)", "Wallis and Futuna Islands", "Western Sahara", "Yemen", "Yugoslavia", "Zaire", "Zambia", "Zimbabwe"]
 }
 
 // MARM: API
 struct WebServiceURL{
-    static let Base_URL = "http://weightsitallabout.com/thetomo/api/"
+    static let Base_URL = "http://modamily.com/api/"
     
     static var Signup_URL: String{
         return Base_URL + "user/signup"
@@ -114,46 +66,22 @@ struct WebServiceURL{
     static var Login_URL: String{
         return Base_URL + "user/login"
     }
+    static var Learn_URL               = "http://modamily.com/learn/best-practices/"
+    static var Privacy_URL             = "http://modamily.com/privacy/"
+    static var Terms_URL               = "http://modamily.com/terms/"
 }
 // MARK: Push Notification
 struct Pushnotification {
     static var DEVICE_TOKEN = ""
 }
 
-// MARK: Chatting service == QuickBlox
-struct Chat_Service {
-    static var applicationID: UInt = 71778
-    static var authorizationKey    = "gP-S56MzhhtkXGK"
-    static var authorizationSecret = "q7S2rFZxFGXYmQb"
-    
-    static var accountKey          = "8uALEXtcstHzVzA3Dzcs"
-    static var accountID           = "98060"
-}
-
 // MARK: Social share
 
 struct SocialAPIs {
     
-    static let FacebookPostPlaceholder    = "Say something about this link..."
-    static let FacebookCommentPlaceholder = "Write a comment..."
-    
-    struct Instagram {
-        
-//        static let AUTHURL                = "https://api.instagram.com/oauth/authorize/"
-//        static let APIURl                 = "https://api.instagram.com/v1/users/"
-        static let ClientID               = "7920e90b468a45b19ae6c0a86273928b"
-        static let ClientSecret           = "0e6144886f09438a8c1e04fa16cc51a9"
-        static let REDIRECT_URI           = "https://tomofortomorrow.com"
-//        static let ACCESS_TOKEN           = "access_token"
-//        static let SCOPE                  = "likes+comments+relationships"
-        struct AuthKey {
-            static let AuthToken          = "Instagram_Auth_Token"
-            static let FirstTime          = "Instagram_First_Time"
-        }
-    }
     struct Facebook {
-        static let APIID                 = "1047334588640000"
-        static let AppSecret             = "7af43eafc6737a8e2590445971aaa4b4"
+        static let APIID                 = "1472587806338388"
+        static let AppSecret             = "4f15f7a90b94baba53e30c602037d3b4"
         struct AuthKey {
             static let AuthToken         = "Facebook_Auth_Token"
             static let FirstTime         = "Facebook_First_Time"
@@ -164,130 +92,40 @@ struct SocialAPIs {
             static let ID                = "Facebook_ID"            
         }
     }
-    struct Twitter {
-        static let APIKey                = "IXzvAUOKqU3tHnnDofXO5l3ik"
-        static let APISecret             = "JkBKYCCacyWRPBwFIC18d3A8pTRzsBdG6XohEXIFFnGz91PTHn"
-        struct AuthKey {
-            static let AuthToken         = "Twitter_Auth_Token"
-            static let FirstTime         = "Twitter_First_Time"
-        }
-    }
-    struct Linkedin {
-        
-        static let linkedInKey           = "868oay6pbe2a22"
-        static let linkedInSecret        = "ybKVI3PkMGLXnZV9"
-        static let authorizationEndPoint = "https://www.linkedin.com/uas/oauth2/authorization"
-        static let accessTokenEndPoint   = "https://www.linkedin.com/uas/oauth2/accessToken"
-        static let linkedinRedirectURL   = "https://com.appcoda.linkedin.oauth/oauth"
-        static let revokeUrl             = "https://api.linkedin.com/uas/oauth/invalidateToken"
-        static let targetURLString       = "https://api.linkedin.com/v1/people/~:(public-profile-url)?format=json"
-        
-        struct AuthKey {
-            static let AuthToken         = "Linkedin_Auth_Token"
-            static let FirstTime         = "Linkedin_First_Time"
-        }
-    }
-    struct Medium {
-        static let APIKey                = "17ea5d32937f"
-        static let APISecret             = "f4a88ce3531d2fbbd7d57d0484a9fd382bdfad4f"
-        static let CallbackURL           = "http://mediumswift.herokuapp.com/callback/TOMO!" // https://github.com/drinkius/mediumswift.herokuapp.com
-        struct AuthKey {
-            static let AuthToken         = "Medium_Auth_Token"
-            static let FirstTime         = "Medium_First_Time"
-        }
-    }
-    struct Pinterest {
-        static let APPID                 = "4963268448021921437"
-        static let APPSecret             = "9bc512a3246d4cfc2d0f39aa273dbf6297eba9d96d98eb70a1865a6b921f5a1f"
-        struct AuthKey {
-            static let AuthToken         = "Pinterest_Auth_Token"
-            static let FirstTime         = "Pinterest_First_Time"
-        }
-    }
-    struct Tumblr {
-        static let OAuthConsumerKey      = "hEhUh2siS46Oz0VLcJrC1lgN27hLmcmZTFZcBLeGAwzM09EEDA"
-        static let OAuthConsumerSecret   = "gGHM8YOEyrEM8ZmtEhxeRmT8Zhn0iiHOWAeMYYGXhfaRKRNqzB"
-        struct AuthKey {
-            static let AuthToken         = "Tumblr_Auth_Token"
-            static let AuthTokenSecret   = "Tumblr_Auth_TokenSecret"
-            static let FirstTime         = "Tumblr_First_Time"
-        }
-    }
-    struct Snapchat {
-        struct AuthKey {
-            static let AuthToken         = "Snapchat_Auth_Token"
-            static let FirstTime         = "Snapchat_First_Time"
-            static let SnapCodeImage     = "SnapChat_Code_Image"
-        }
-    }
-    struct Psn {
-        struct AuthKey {
-            static let AuthToken         = "Psn_Auth_Token"
-            static let FirstTime         = "Psn_First_Time"
-        }
-    }
-    struct Xbox {
-        struct AuthKey {
-            static let AuthToken         = "Xbox_Auth_Token"
-            static let FirstTime         = "Xbox_First_Time"
-        }
-    }
-    struct Spotify {
-        static let ClientID                 = "757760c84b1f4e9fb7caca5f035412ba"
-        static let ClientSecret             = "87da6c24396f423f9178ebef3b246963"
-        static let RedirectURL              = "TOMO://returnAfterLogin"
-        static let RedirectURLHost          = "returnafterlogin"
-        struct AuthKey {
-            static let AuthToken         = "Spotify_Auth_Token"
-            static let FirstTime         = "Spotify_First_Time"
-        }
-    }
+    
 }
 
 // MARK: Colors
 
 struct Colors {
-    static let appColor                 = UIColor(hex: "FB933B")
-    static let lightAppColor            = UIColor(hex: "5EB7E5")
+    
+    static let appColor                 = UIColor(hex: "FB933B")       
+    static let normarColor              = UIColor(hex: "4D4B4C")
+    
     static let inActiveAppColor         = UIColor(hex: "80C7EA")
     static let lightGrayColor           = UIColor(hex: "D9D9D9")
     static let greenColor               = UIColor(hex: "2FB44A")
     static let confirmColor             = UIColor(hex: "0FDD7F")
     static let imageHighlight           = UIColor(hex: "37AAE4")
     static let titleColor               = UIColor(hex: "F5DD44")
-    static let addedColor               = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.5)
     
     static let facebookColor            = UIColor(hex: "39579B")
-    static let linkedInColor            = UIColor(hex: "2376AD")
-    static let twitterColor             = UIColor(hex: "1DCAFF")
-    static let tumblrColor              = UIColor(hex: "33506C")
-    static let snapchatColor            = UIColor(hex: "FBFB00")
-    static let instagramColor           = UIColor.clear
-    static let mediumColor              = UIColor(hex: "66CDAA")
-    static let spotifyColor             = UIColor(hex: "66D46E")
-    static let ebayColor                = UIColor(hex: "E53238")
-    static let pinterestColor           = UIColor(hex: "E53238")
-    static let yelpColor                = UIColor(hex: "C92228")
-    static let psnColor                 = UIColor(hex: "AF0606")
-    static let xBoxColor                = UIColor(hex: "027D00")
     
-    struct SocialShare {
-        static let inActiveBorder       = UIColor(hex: "F0F0F0")
-        static let linkAccountPop       = UIColor(hex: "0a0f44")
-    }
-    
-    struct SocialCard {
-        static let inActiveBack         = UIColor(red: 154 / 255, green: 154 / 255, blue: 154 / 255, alpha: 0.5)
-        static let inActiveCard         = UIColor(hex: "5C552E")
-        static let standardBoder        = UIColor(hex: "515051")
-        static let standardMainBoder    = UIColor(hex: "26ABE3")        
-    }
-    
-
 }
 struct FontName{
-    static let FuturaMedium         = "Futura-Medium"
-    static let FuturaBold           = "Futura-Bold"
+    static let k_FontName_SFProDisplayHeavy                = "SFProDisplay-Heavy"
+    static let k_FontName_SFProDisplayRegular              = "SFProDisplay-Regular"
+    static let k_FontName_SFProDisplayBold                 = "SFProDisplay-Bold"
+    static let k_FontName_SFProDisplayBlack                = "SFProDisplay-Black"
+    static let k_FontName_SFProDisplaySemibold             = "SFProDisplay-Semibold"
+    static let k_FontName_SFProDisplayLight                = "SFProDisplay-Light"
+    static let k_FontName_SFProDisplayMedium               = "SFProDisplay-Medium"
+    static let k_FontName_SFProDisplayThin                 = "SFProDisplay-Thin"
+    
+     static let k_FontName_BodoniBold                      = "BodoniSvtyTwoITCTT-Bold"
+     static let k_FontName_BodoniBookItalic                = "BodoniSvtyTwoITCTT-BookIta"
+     static let k_FontName_BodoniBook                      = "BodoniSvtyTwoITCTT-Book"
+    
 }
 struct Password {
     static let regex                = "^(?:(?:(?=.*?[0-9])(?=.*?[-!@#$%&*ˆ+=_])|(?:(?=.*?[0-9])|(?=.*?[A-Z])|(?=.*?[-!@#$%&*ˆ+=_])))|(?=.*?[a-z])(?=.*?[0-9])(?=.*?[-!@#$%&*ˆ+=_]))[A-Za-z0-9-!@#$%&*ˆ+=_]{5,}$"//"^((?=.*[a-z])|(?=.*[0-9])|(?=.*[~`!@#$%^&*])).{5,}$"

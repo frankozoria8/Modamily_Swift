@@ -100,10 +100,43 @@ class BaseViewController: UIViewController {
     }
     
     func addNavBarImage() {
+        let navController = navigationController!
         
-        let navbarImage = UIImage(named: "modamily_small_logo")?.stretchableImage(withLeftCapWidth: 0, topCapHeight: 1)
-        self.navigationController?.navigationBar.setBackgroundImage(navbarImage, for: .default)
+        let image = UIImage(named: "Modamily") 
+        let imageView = UIImageView(image: image)
+        
+        let bannerWidth = navController.navigationBar.frame.size.width
+        let bannerHeight = navController.navigationBar.frame.size.height
+        
+        let bannerX = bannerWidth / 2 - (image?.size.width)! / 2
+        let bannerY = bannerHeight / 2 - (image?.size.height)! / 2
+        
+        imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
+        imageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = imageView
+//        let navbarImage = UIImage(named: "modamily_small_logo")?.stretchableImage(withLeftCapWidth: 0, topCapHeight: 1)
+//        self.navigationController?.navigationBar.setBackgroundImage(navbarImage, for: .default)
 
+    }
+    func addNavBarEmptyImage() {
+        
+        let navController = navigationController!
+        
+        let image = UIImage(named: "emptyIcon")
+        let imageView = UIImageView(image: image)
+        
+        let bannerWidth = navController.navigationBar.frame.size.width
+        let bannerHeight = navController.navigationBar.frame.size.height
+        
+        let bannerX = bannerWidth / 2 - (image?.size.width)! / 2
+        let bannerY = bannerHeight / 2 - (image?.size.height)! / 2
+        
+        imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
+        imageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = imageView
+        
     }
     func addLeftItemImage(){
         let button = UIButton.init(type: .custom)
@@ -113,6 +146,7 @@ class BaseViewController: UIViewController {
         let barButton = UIBarButtonItem.init(customView: button)
         self.navigationItem.leftBarButtonItem = barButton
     }
+    
     
 }
 extension UIViewController: NVActivityIndicatorViewable {
@@ -131,5 +165,24 @@ extension UIViewController: NVActivityIndicatorViewable {
         self.stopAnimating()
     }
 }
-
+extension UITextField {
+    
+    @IBInspectable var bottomBorderColor: UIColor? {
+        get {
+            return self.bottomBorderColor
+        }
+        set {
+            self.borderStyle = UITextBorderStyle.none;
+            let border = CALayer()
+            let width = CGFloat(0.5)
+            border.borderColor = newValue?.cgColor
+            border.frame = CGRect(x: 0, y: self.frame.size.height - width,   width:  self.frame.size.width + self.frame.size.height, height: self.frame.size.height)
+            
+            border.borderWidth = width
+            self.layer.addSublayer(border)
+            self.layer.masksToBounds = true
+            
+        }
+    }
+}
 

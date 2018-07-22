@@ -9,12 +9,24 @@ target 'Modamily' do
 	
 	pod 'Alamofire', '~> 4.7'
 	pod 'SwiftyJSON'
+    
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKShareKit'
+    pod 'FBSDKLoginKit'
+    
 	pod 'SCPageControl'
 	pod 'SwiftValidator'
 	pod 'SDWebImage'
-	pod 'SkyFloatingLabelTextField'
+#    pod 'SkyFloatingLabelTextField'
     pod 'NVActivityIndicatorView'
     pod 'TPKeyboardAvoiding'
-    
+    pod 'Pageboy'
+    pod 'Tabman'
+    pod 'EggRating'
+    pod 'ActionSheetPicker-3.0'
+    pod 'Koloda'
+    pod 'RangeSeekSlider'
+    pod 'LinearProgressBar'
+
 	inhibit_all_warnings!
 end
